@@ -1,0 +1,140 @@
+*{
+margin: 0;
+padding: 0;
+font-family:Georgia (serif);
+box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #bdceed , #f1d0f9);
+    padding: 10px;
+}
+.todo-app{
+    width:100% ;
+    max-width: 540px;
+    background: whitesmoke;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius:15px;
+}
+.todo-app h2 {
+    color: #112B3C;
+    display: flex;
+    align-items:center;
+    margin-bottom: 20px;
+}
+
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+flex: 1;
+border: none;
+outline: none;
+background: transparent;
+padding: 10px;
+font-weight: 14px;
+}
+button {
+  border: none;
+  outline: none;
+  display: inline-block;
+  padding: 12px 50px;
+  background: transparent;
+  color: #725AC1;
+  font-size: 16px;
+  cursor: pointer;
+  transition:0.9s;
+  border: 2px solid #725AC1;
+  border-radius: 20px;
+}
+button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+button:active {
+  transform: scale(0.7);
+}
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+ul li.checked{
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before{
+  background-image: url(images/checked.png);
+}
+ul li span {
+  position: absolute;
+  top:5px;  
+  right: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius:70%;
+}
+ul li span:hover{
+  background: #edeef0;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #2f2f2f;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #2f2f2f;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+.heart {
+  color: #982020;
+}
